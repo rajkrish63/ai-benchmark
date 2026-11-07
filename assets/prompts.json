@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "hash": "pb_v1_f7e1b8c2d9a405ef",
+  "prompts": [
+    {
+      "id": 0,
+      "name": "Short Instruction",
+      "description": "Single-sentence concise summary (approx. 128 tokens context)",
+      "approx_tokens": 128,
+      "max_tokens": 64,
+      "text": "### Instruction:\nSummarize this in one sentence:\nThe quick brown fox jumps over the lazy dog. The dog was sleeping soundly beneath the shade of the willow tree. The fox was hungry and nimble, darting swiftly through the tall prairie grass without making a sound.\n\n### Response:\n"
+    },
+    {
+      "id": 1,
+      "name": "Multi-turn Chat",
+      "description": "Iterative Python coding dialogue (approx. 512 tokens context)",
+      "approx_tokens": 512,
+      "max_tokens": 256,
+      "text": "### User:\nHi, can you help me write a Python function to calculate fibonacci numbers?\n### Assistant:\nSure! Here's a simple recursive implementation:\n\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)\n```\n### User:\nThis is exponential O(2^n). Can you make it an iterative solution with O(1) space complexity and explain how it avoids redundant computations?\n### Assistant:\n"
+    },
+    {
+      "id": 2,
+      "name": "Long Document Q&A",
+      "description": "Document comprehension and extraction (approx. 1536 tokens context)",
+      "approx_tokens": 1536,
+      "max_tokens": 256,
+      "text": "### Document:\nClimate change refers to long-term shifts in temperatures and weather patterns. While natural variability such as volcanic activity and solar cycles have historically influenced Earth's climate, human activities since the onset of the Industrial Revolution in the 18th century have become the dominant driver of global warming. The principal mechanism is the emission of greenhouse gases—chiefly carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O)—which accumulate in the atmosphere and trap thermal radiation that would otherwise escape into space.\n\nFirst, fossil fuel combustion for electricity generation, industrial manufacturing, and automotive transportation accounts for over 70% of worldwide greenhouse gas emissions. Coal-fired power stations and petroleum refining are notable contributors.\n\nSecond, deforestation and widespread land-use conversion reduce the planetary capacity for carbon sequestration. Tropical rainforests such as the Amazon Basin serve as crucial biospheric carbon sinks; clearing these ecosystems via slash-and-burn agriculture releases gigatons of stored carbon dioxide while diminishing ongoing absorption.\n\nThird, intensive agricultural practices and ruminant livestock cultivation generate substantial quantities of atmospheric methane through enteric fermentation and flooded paddy rice fields. Additionally, synthetic nitrogen-based fertilizers volatilize into nitrous oxide, a molecule with a global warming potential nearly 300 times that of carbon dioxide over a century-long horizon.\n\nMitigation pathways encompass renewable energy deployment, grid electrification, reforestation programs, carbon capture technologies, and sustainable agricultural practices.\n\n### Question:\nBased strictly on the provided document, what are the three main causes of global warming and what are their respective mechanisms?\n### Answer:\n"
+    },
+    {
+      "id": 3,
+      "name": "Code Generation",
+      "description": "Complete algorithm implementation in C++ (approx. 768 tokens context)",
+      "approx_tokens": 768,
+      "max_tokens": 512,
+      "text": "### Instruction:\nWrite a complete, compilable, and self-contained C++ program that reads 32-bit integers from standard input until EOF, stores them in dynamic memory, and computes their median in O(N) or O(N log N) time. The program must handle empty input gracefully, deal with both odd and even numbers of elements, and print the resulting median as a floating-point value with two decimal places.\n\n### Response:\n"
+    },
+    {
+      "id": 4,
+      "name": "Multi-step Reasoning",
+      "description": "Step-by-step mathematical distance-rate-time problem (approx. 1024 tokens context)",
+      "approx_tokens": 1024,
+      "max_tokens": 256,
+      "text": "### Instruction:\nThink step by step and show all intermediate arithmetic.\nTwo trains depart simultaneously from stations that are exactly 280 miles apart and travel toward each other on parallel tracks. Train Alpha departs from Chicago traveling east at a constant speed of 60 miles per hour. Train Beta departs from Detroit traveling west at a constant speed of 80 miles per hour.\n1. What is the relative speed of closure between the two trains?\n2. Exactly how many hours and minutes after departure will the trains cross each other?\n3. At the exact moment they meet, how many miles has each individual train traveled from its respective origin?\n\n### Response:\n"
+    }
+  ]
+}
+
