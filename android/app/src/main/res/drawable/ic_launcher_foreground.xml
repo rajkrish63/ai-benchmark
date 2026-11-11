@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer Card Surface Background -->
+    <path
+        android:fillColor="#0A0A0A"
+        android:strokeColor="#262626"
+        android:strokeWidth="1.5"
+        android:pathData="M24,24 h60 a12,12 0 0 1 12,12 v36 a12,12 0 0 1 -12,12 h-60 a12,12 0 0 1 -12,-12 v-36 a12,12 0 0 1 12,-12 z" />
+
+    <!-- Circular Speed Gauge Track -->
+    <path
+        android:strokeColor="#262626"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M34,74 A28,28 0 1,1 74,74" />
+
+    <!-- Active Speed Segment (Claude Orange Tint) -->
+    <path
+        android:strokeColor="#D97757"
+        android:strokeAlpha="0.6"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M34,74 A28,28 0 0,1 54,26" />
+
+    <!-- Central Lightning Bolt (Claude Orange #D97757) -->
+    <path
+        android:fillColor="#D97757"
+        android:pathData="M57,28 L43,54 L52,54 L46,80 L64,50 L55,50 Z" />
+
+    <!-- Highlight Reflection on Bolt Spine -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeAlpha="0.8"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:pathData="M57,28 L43,54 L52,54 L46,80" />
+</vector>
+
