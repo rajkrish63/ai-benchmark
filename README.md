@@ -66,9 +66,21 @@ Key findings:
 
 ## Install
 
-1. Download the latest APK from [Releases](TODO).
-2. Enable installs from unknown sources.
-3. Open the app and download a model from the Models screen.
+### Download APK
+Directly download the signed standalone APK from this repository:
+- **[Download PocketBench v1.0.0 Release APK (`release/PocketBench-v1.0.0-release.apk`)](./release/PocketBench-v1.0.0-release.apk)** (53 MB)
+
+### Installation Methods
+1. **Direct on Phone**:
+   - Download `PocketBench-v1.0.0-release.apk` to your phone.
+   - Tap the downloaded file and allow installs from unknown sources if prompted.
+   - Open PocketBench and launch your first benchmark.
+
+2. **Via ADB**:
+   ```bash
+   adb install -r release/PocketBench-v1.0.0-release.apk
+   adb shell am start -n com.pocketbenchapp/.MainActivity
+   ```
 
 ## Run a benchmark
 
@@ -87,8 +99,8 @@ Key findings:
 ## Build from source
 
 ```bash
-git clone TODO
-cd TODO
+git clone https://github.com/rajkrish63/ai-benchmark.git
+cd ai-benchmark
 npm install
 npx react-native run-android
 ```
